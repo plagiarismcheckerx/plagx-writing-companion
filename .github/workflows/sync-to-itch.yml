@@ -1,0 +1,25 @@
+name: Sync to itch.io
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build itch.io package
+        run: |
+          mkdir build
+          cp index.html style.css app.js build/
+          sed -i 's/utm_source=github_pages/utm_source=itchio/g; s/<a href="/<a target="_blank" rel="noopener" href="/g' build/index.html
+      - name: Push to itch.io
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+        run: |
+          curl -sL -o butler.zip https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default
+          unzip -q butler.zip -d butler-bin
+          chmod +x butler-bin/butler
+          ./butler-bin/butler push build plagiarismcheckerx/plagx-writing-companion:html
