@@ -1,0 +1,7 @@
+---
+ name: Plagx Writing Companion – Free Citation Generator & Draft Checker
+ description: Free browser-based academic writing companion by Plagiarism Checker X. APA/MLA/Chicago/Harvard citations, draft checks, grammar hints, reference matching and reading time. 100% client-side.
+ authors:
+  - Plagiarism Checker X
+ normalize_css: no
+...
