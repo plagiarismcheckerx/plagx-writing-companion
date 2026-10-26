@@ -1,3 +1,15 @@
+---
+title: Plagx Writing Companion
+emoji: ✍️
+colorFrom: blue
+colorTo: indigo
+sdk: static
+app_file: index.html
+pinned: false
+license: mit
+short_description: Free citation generator, draft checker & grammar hints
+---
+
 # Plagx Writing Companion
 
 **A free, browser-based academic writing utility by [Plagiarism Checker X](https://plagiarismcheckerx.com/).**
