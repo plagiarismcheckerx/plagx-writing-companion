@@ -30,3 +30,4 @@ button#cCopy{border:0;background:var(--accent);color:#fff;padding:8px 14px;borde
 footer{padding:24px 16px 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--border);margin-top:24px}
 footer a{color:var(--accent)}
 footer small{display:block;margin-top:4px}
+.small{font-size:.9rem}
