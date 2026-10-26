@@ -10,7 +10,7 @@ A free, browser-based academic writing utility:
 
 Everything runs locally in your browser. No text is uploaded and no account is needed.
 
-**Live:** https://USERNAME.github.io/plagx-writing-companion/
+**Live:** https://plagiarismcheckerx.github.io/plagx-writing-companion/
 
 ---
 
