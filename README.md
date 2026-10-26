@@ -77,7 +77,6 @@ Paste your body text and your reference list side by side. The tool finds author
 ├── demo.css     # Styling (light and dark mode)
 ├── demo.js      # Draft checks, hints, citations, reference matching
 ├── demo.html    # Page body used by the JSFiddle demo
-├── demo.details # JSFiddle title and description
 ├── README.md
 └── LICENSE      # MIT
 ```
