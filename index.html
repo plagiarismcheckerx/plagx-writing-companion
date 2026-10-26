@@ -11,7 +11,10 @@
 <body>
 <header>
   <h1>Plagx Writing Companion</h1>
-  <p>Free academic writing utility. Everything runs in your browser and your text never leaves your device.</p>
+  <p class="lead">A free academic writing companion for students, researchers and writers. Generate citations, check your draft, get grammar and style hints, match citations to your reference list and estimate reading time, all on one page.</p>
+  <ul class="pills">
+    <li>✅ 100% free</li><li>🔒 Text never leaves your browser</li><li>⚡ No sign-up</li><li>📚 APA · MLA · Chicago · Harvard</li>
+  </ul>
 </header>
 
 <nav class="tabs" role="tablist">
@@ -22,6 +25,7 @@
 
 <main>
   <section id="draft" class="panel active">
+    <p class="intro">Paste your essay, thesis chapter or article. Word count, reading time and a readability score update live, and the grammar and style hints below point out things to fix.</p>
     <label for="draftText">Paste your draft</label>
     <textarea id="draftText" rows="14" placeholder="Paste or type your text here..."></textarea>
     <div class="stats" id="stats"></div>
@@ -31,6 +35,7 @@
   </section>
 
   <section id="cite" class="panel">
+    <p class="intro">Pick a source type and a citation style, then fill in the details. Your formatted reference appears instantly and is ready to copy into your bibliography.</p>
     <div class="grid">
       <label>Source type
         <select id="cType"><option value="book">Book</option><option value="journal">Journal article</option><option value="web">Website</option></select>
@@ -54,12 +59,38 @@
   </section>
 
   <section id="refs" class="panel">
-    <p class="muted">Checks author–year in-text citations, e.g. (Smith, 2020) or Smith (2020), against your reference list.</p>
+    <p class="intro">Paste your body text on the left and your reference list on the right, one reference per line. The tool finds author–year citations such as (Smith, 2020), (Lee &amp; Khan, 2019; Ali et al., 2021) or Smith (2020), then shows which citations are missing from your list and which references are never cited.</p>
     <div class="grid two">
       <label>Body text<textarea id="rBody" rows="12"></textarea></label>
       <label>Reference list (one per line)<textarea id="rList" rows="12"></textarea></label>
     </div>
     <div id="rOut"></div>
+  </section>
+
+  <section class="about">
+    <h2>What you can do with Plagx Writing Companion</h2>
+    <div class="cards">
+      <div class="card"><h3>📊 Draft checks &amp; reading time</h3><p>Word, character, sentence and paragraph counts, average sentence length, Flesch Reading Ease score, and reading and speaking time estimates.</p></div>
+      <div class="card"><h3>✍️ Grammar &amp; style hints</h3><p>Flags repeated words, possible passive voice, filler words, common mistakes like "could of", contractions, subjective phrasing, spacing problems and overly long sentences.</p></div>
+      <div class="card"><h3>📚 Citation generator</h3><p>Formats books, journal articles and websites in APA, MLA, Chicago and Harvard styles, with support for multiple authors, DOIs and accessed dates.</p></div>
+      <div class="card"><h3>🔗 Reference matching</h3><p>Compares in-text citations with your reference list, so missing or unused references are caught before you submit.</p></div>
+    </div>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Choose a tab:</b> Draft Checks, Citations or Reference Matching.</li>
+      <li><b>Paste or type</b> your text, or fill in the source details.</li>
+      <li><b>Review the results</b>, which update instantly as you type.</li>
+      <li><b>Copy and fix:</b> copy citations into your bibliography and apply the hints to your draft.</li>
+    </ol>
+    <p>Everything is done by JavaScript running in your browser. Nothing is uploaded, stored or sent to a server, so the tool is safe to use with unpublished work. The hints and citation formats are rule-based, so always double-check them against your institution's style guide.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details><summary>Is Plagx Writing Companion free?</summary><p>Yes. It is completely free, with no account, limits or ads.</p></details>
+    <details><summary>Is my text private?</summary><p>Yes. All processing happens locally in your browser and your text is never uploaded.</p></details>
+    <details><summary>Which citation styles are supported?</summary><p>APA, MLA, Chicago and Harvard, for books, journal articles and websites.</p></details>
+    <details><summary>How is reading time calculated?</summary><p>Reading time assumes about 238 words per minute (average adult silent reading). Speaking time assumes about 130 words per minute.</p></details>
+    <details><summary>Does this tool check for plagiarism or AI-generated text?</summary><p>No. It is a writing helper only. To check complete documents for plagiarism and AI-generated text, use <a href="https://plagiarismcheckerx.com/?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=writing_companion">Plagiarism Checker X</a>.</p></details>
   </section>
 </main>
 
