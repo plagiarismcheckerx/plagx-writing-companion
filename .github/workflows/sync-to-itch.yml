@@ -17,7 +17,7 @@ jobs:
           sed -i 's/utm_source=github_pages/utm_source=itchio/g; s/<a href="/<a target="_blank" rel="noopener" href="/g' build/index.html
       - name: Push to itch.io
         env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          BUTLER_API_KEY: ${{ secrets.ITCH_API_KEY }}
         run: |
           curl -sL -o butler.zip https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default
           unzip -q butler.zip -d butler-bin
