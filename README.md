@@ -31,7 +31,7 @@ Paste your draft to see live statistics:
 - Average sentence length
 - **Flesch Reading Ease** score
 
-For a more detailed readability analysis, try the [Plagiarism Checker X Readability Checker](https://plagiarismcheckerx.com/readability-checker).
+For a more detailed readability analysis, try the [Readability Checker](https://plagiarismcheckerx.com/readability-checker).
 
 ### 2. Grammar and style hints
 
